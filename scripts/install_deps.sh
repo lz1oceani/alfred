@@ -31,7 +31,7 @@ DEBIAN_FRONTEND=noninteractive apt install --no-install-recommends \
   build-essential \
   git \
   wget \
-  module-init-tools \
+  kmod \
   pciutils \
   xserver-xorg \
   xserver-xorg-video-fbdev \

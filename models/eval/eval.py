@@ -41,6 +41,7 @@ class Eval(object):
         if args.preprocess:
             print("\nPreprocessing dataset and saving to %s folders ... This is will take a while. Do this once as required:" % self.model.args.pp_folder)
             self.model.args.fast_epoch = self.args.fast_epoch
+            self.model.args.use_templated_goals = self.args.use_templated_goals
             dataset = Dataset(self.model.args, self.model.vocab)
             dataset.preprocess_splits(self.splits)
 
